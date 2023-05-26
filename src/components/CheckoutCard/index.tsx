@@ -1,4 +1,5 @@
 import { MdOutlineReceiptLong } from "react-icons/md";
+import { AiFillApple } from "react-icons/ai";
 
 const CheckoutCard = () => {
   return (
@@ -6,11 +7,16 @@ const CheckoutCard = () => {
       <div className="h-[2rem] w-[2rem] absolute top-[78%] -left-[1rem]  z-10 bg-white rounded-full" />
       <div className="h-[2rem] w-[2rem] absolute top-[78%] -right-[1rem]  z-10 bg-white rounded-full" />
 
-      <div className="h-[24rem] w-[17rem] rounded-lg mt-[4rem]  bg-[#EFF5F9] flex flex-col items-center justify-end">
+      <div className="h-[23.5rem] w-[17rem] rounded-lg mt-[4rem]  bg-[#EFF5F9] flex flex-col items-center justify-end">
         <div className="flex flex-col  text-[#2D3753] text-sm space-y-3 w-[80%] pb-[1rem]">
           <div className="flex items-center justify-between space-x-4">
             <p className="">Company</p>
-            <p className="font-semibold">Apple</p>
+            <span className="flex  items-center space-x-[1rems]">
+              <span className="bg-[#202E52] rounded-full  flex items-center justify-center ">
+                <AiFillApple className="text-[#F7F7FA] text-md px-[0.2px] py-[0.8px]" />
+              </span>
+              <p className="font-semibold pl-2">Apple</p>
+            </span>
           </div>
           <div className="flex items-center justify-between space-x-4">
             <p className="">Order Number</p>
