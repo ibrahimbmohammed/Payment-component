@@ -64,13 +64,13 @@ const CardFormSection = ({
         </div>
         <div className="relative flex-[55%] w-full ">
           <input
-            className="text-[#1F2B52] w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-[#1364FA] focus:outline-offset-0 focus:bg-[#1364FA]/10 focus:text-[#1364FA] focus:placeholder:text-[#1364FA] "
+            className="text-bgPurple w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue "
             type="text"
             maxLength={cardType?.code?.size ?? 3}
             placeholder="Enter CVV"
             data-testid="card-number-cvv"
           />
-          <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-[#1364FA] focus-within:text-red text-2xl absolute right-2 sm:right-4  top-4 sm:top-5" />
+          <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-primaryBlue focus-within:text-red text-2xl absolute right-2 sm:right-4  top-4 sm:top-5" />
         </div>
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:space-x-[1rem] justify-between">
@@ -84,7 +84,7 @@ const CardFormSection = ({
         </div>
         <div className="flex space-x-2 items-center justify-center flex-[55%] w-full">
           <input
-            className="text-[#1F2B52] w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-[#1364FA] focus:outline-offset-0 focus:bg-[#1364FA]/10 focus:text-[#1364FA] focus:placeholder:text-[#1364FA]"
+            className="text-bgPurple w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
             type="number"
             placeholder="09"
             data-testid="card-number-exp1"
@@ -92,7 +92,7 @@ const CardFormSection = ({
 
           <p className="font-semibold text-black text-xl px-4">/</p>
           <input
-            className="text-[#1F2B52] w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-[#1364FA] focus:outline-offset-0 focus:bg-[#1364FA]/10 focus:text-[#1364FA] focus:placeholder:text-[#1364FA]"
+            className="text-bgPurple w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
             type="number"
             placeholder="23"
             data-testid="card-number-exp2"
@@ -110,17 +110,17 @@ const CardFormSection = ({
         </div>
         <div className="relative flex-[55%] w-full">
           <input
-            className="text-[#1F2B52] w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-[#1364FA] focus:outline-offset-0 focus:bg-[#1364FA]/10 focus:text-[#1364FA] focus:placeholder:text-[#1364FA]"
+            className="text-bgPurple w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
             type="password"
             placeholder="Enter Password"
             data-testid="card-number-password"
           />
-          <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-[#1364FA] text-2xl absolute  right-2 sm:right-4  top-4 sm:top-5" />
+          <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-primaryBlue text-2xl absolute  right-2 sm:right-4  top-4 sm:top-5" />
         </div>
       </div>
       <div className="w-full">
         <button
-          className="text-white font-semibold w-full  text-md rounded-md bg-[#1364FA] py-[1.15rem] px-[0.4rem] "
+          className="text-white font-semibold w-full  text-md rounded-md bg-primaryBlue py-[1.15rem] px-[0.4rem] "
           type="button"
         >
           Pay Now

@@ -16,18 +16,18 @@ const VitualCard = ({ renderCardLogo }: VitualCardProps) => {
           alt="sim card image"
           className="h-[2.5rem] w-[2.5rem] rotate-90"
         />
-        <FiWifi className="text-[#2D3753] text-2xl" />
+        <FiWifi className="text-textPurple text-2xl" />
       </div>
       <div className="flex flex-col space-y-4">
         <div className="flex flex-col items-start">
-          <p className="text-[#2D3753] text-xs font-[500]">Jonathan Michael</p>
+          <p className="text-textPurple text-xs font-[500]">Jonathan Michael</p>
           <div className="flex space-x-2 items-end">
             <p className="text-[#2C3652] font-extrabold text-2xl">....</p>
             <p className="text-[#2C3652] font-[700] text-sm">3456</p>
           </div>
         </div>
         <div className="flex items-center justify-between">
-          <p className="text-[#2D3753] font-semibold text-xs">9/22</p>
+          <p className="text-textPurple font-semibold text-xs">9/22</p>
           <div className="h-[2rem] w-[2.8rem]">{renderCardLogo()}</div>
         </div>
       </div>

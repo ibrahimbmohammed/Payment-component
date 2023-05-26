@@ -30,19 +30,19 @@ const CardInformationSection = ({
           </span>
         </div>
         <div className="flex space-x-[0.1rem]">
-          <span className="bg-[#1F2B52] max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
+          <span className="bg-bgPurple max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
             <p className="font-semibold text-lg">0</p>
           </span>
-          <span className="bg-[#1F2B52] max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
+          <span className="bg-bgPurple max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
             <p className="font-semibold text-lg">1</p>
           </span>
           <div className="flex items-center justify-center  max-h-[2.6rem] px-[0.1rem]">
             <p className="text-black font-semibold">:</p>
           </div>
-          <span className="bg-[#1F2B52] max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
+          <span className="bg-bgPurple max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
             <p className="font-semibold text-lg">1</p>
           </span>
-          <span className="bg-[#1F2B52] max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
+          <span className="bg-bgPurple max-h-[2.6rem] w-[1.6rem] flex items-center rounded-[0.25rem] justify-center  py-1">
             <p className="font-semibold text-lg">9</p>
           </span>
         </div>
