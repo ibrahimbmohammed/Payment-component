@@ -27,7 +27,6 @@ function App() {
           className="h-[1.2rem] w-[1.8rem] sm:h-[2rem] sm:w-[2.8rem]"
           src={`./src/assets/images/png/${cardType.type}.png`}
           alt={cardType.type}
-          data-testid="card-logo"
         />
       );
     } else if (!cardType && number.length === 0) {
@@ -36,7 +35,6 @@ function App() {
           className="h-[2rem] w-[2.8rem]"
           src={`./src/assets/images/png/mastercard.png`}
           alt="mastercard logo"
-          data-testid="master-card"
         />
       );
     }
