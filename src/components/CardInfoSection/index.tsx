@@ -17,7 +17,7 @@ const CardInformationSection = ({
 }: CardInformationSectionProps) => {
   return (
     <div className="flex flex-[65%] flex-col space-y-8">
-      <div className="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-[1rem] items-center justify-between ">
+      <div className="flex flex-col space-y-3 sm:space-y-0 sm:flex-row space-x-[1rem] items-center justify-between pb-[0.4rem]">
         <div className="image flex items-center justify-center space-x-[1rem]">
           <img
             src={logo}

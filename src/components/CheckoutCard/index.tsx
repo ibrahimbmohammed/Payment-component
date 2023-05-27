@@ -4,8 +4,8 @@ import { AiFillApple } from "react-icons/ai";
 const CheckoutCard = () => {
   return (
     <div className="relative">
-      <div className="h-[2rem] w-[2rem] absolute top-[78%] -left-[1rem]  z-10 bg-white rounded-full" />
-      <div className="h-[2rem] w-[2rem] absolute top-[78%] -right-[1rem]  z-10 bg-white rounded-full" />
+      <div className="h-[2rem] w-[2rem] absolute top-[77%] -left-[1rem]  z-10 bg-white rounded-full" />
+      <div className="h-[2rem] w-[2rem] absolute top-[77%] -right-[1rem]  z-10 bg-white rounded-full" />
 
       <div className="h-[23.5rem] w-[17rem] rounded-lg mt-[4rem]  bg-[#EFF5F9] flex flex-col items-center justify-end">
         <div className="flex flex-col  text-textPurple text-sm space-y-3 w-[80%] pb-[1rem]">

@@ -8,4 +8,8 @@
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
   background-color: #f4f4f4;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
 }
