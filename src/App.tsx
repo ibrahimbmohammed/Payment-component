@@ -5,6 +5,7 @@ import { detectCardType, formatCreditCardNumber } from "@lib/utils";
 import CardInformationSection from "@components/CardInfoSection";
 import CheckoutSection from "@components/CheckoutSection";
 import CardHeader from "@components/CardHeader";
+import mastercardLogo from "@/assets/images/png/mastercard.png";
 
 function App() {
   const [number, setNumber] = useState("");
@@ -32,7 +33,7 @@ function App() {
       return (
         <img
           className="h-[2rem] w-[2.8rem]"
-          src={`./src/assets/images/png/mastercard.png`}
+          src={mastercardLogo}
           alt="mastercard logo"
         />
       );
