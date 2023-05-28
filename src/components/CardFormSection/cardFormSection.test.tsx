@@ -4,13 +4,12 @@ import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import CardFormSection from "@components/CardFormSection";
 
 describe("CardFormSection", () => {
+  afterEach(() => {
+    cleanup();
+  });
+
   it("renders correctly", () => {
     // Render the component
-
-    afterEach(() => {
-      cleanup();
-    });
-
     render(
       <CardFormSection
         number=""
@@ -51,7 +50,7 @@ describe("CardFormSection", () => {
     );
 
     // Get the input element and simulate a change event
-    const inputElement = await screen.getByTestId("card-number-input");
+    const inputElement = screen.getByTestId("card-number-input");
     fireEvent.change(inputElement, mockEvent);
 
     // Assert that the handleNumberChange function was called with the correct value

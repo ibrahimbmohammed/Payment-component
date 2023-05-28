@@ -1,4 +1,5 @@
 import CardCheckLogo from "@components/CardCheckLogo";
+import Input from "@components/CardInuput";
 import { CreditCardType } from "credit-card-type/dist/types";
 import { ChangeEvent } from "react";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
@@ -35,18 +36,18 @@ const CardFormSection = ({
         </div>
       </div>
       <div className="flex flex-col space-x-[1rem] relative">
-        <input
-          className={`text-[#B8BDCD] font-[500] text-sm sm:text-lg rounded-md bg-[#F9FBFC] py-[1rem]  pl-14 sm:pl-[5.5rem] px-[0.4rem] ${
-            !renderCardLogo() && number.length >= 2
+        <Input
+          className={`${
+            !renderCardLogo() && number?.length >= 2
               ? "border border-red-500"
               : "border"
-          }  outline-none placeholder:text-[#BEC4D2]  transition-colors delay-100 ease-in-out`}
+          } text-[#B8BDCD] bg-[#F9FBFC] pl-14 sm:pl-[5.5rem]   px-[0.4rem] outline-none placeholder:text-[#BEC4D2]  transition-colors delay-100 ease-in-out focus:outline-[#F9FBFC] focus:outline-offset-0 focus:bg-[#F9FBFC] focus:text-[#B8BDCD] focus:placeholder:text-[#B8BDCD]`}
           type="text"
           maxLength={31}
           value={number}
           onChange={handleNumberChange}
           placeholder="Enter credit card number"
-          data-testid="card-number-input"
+          dataTestId="card-number-input"
         />
         <CardCheckLogo number={number} renderCardLogo={renderCardLogo} />
         <div className=" absolute left-0 top-4">
@@ -63,12 +64,11 @@ const CardFormSection = ({
           </p>
         </div>
         <div className="relative flex-[55%] w-full ">
-          <input
-            className="text-bgPurple w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue "
+          <Input
             type="text"
             maxLength={cardType?.code?.size ?? 3}
             placeholder="Enter CVV"
-            data-testid="card-number-cvv"
+            dataTestId="card-number-cvv"
           />
           <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-primaryBlue focus-within:text-red text-2xl absolute right-2 sm:right-4  top-4 sm:top-5" />
         </div>
@@ -83,20 +83,10 @@ const CardFormSection = ({
           </p>
         </div>
         <div className="flex space-x-2 items-center justify-center flex-[55%] w-full">
-          <input
-            className="text-bgPurple w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
-            type="number"
-            placeholder="09"
-            data-testid="card-number-exp1"
-          />
-
+          <Input type="number" placeholder="09" dataTestId="card-number-exp1" />
           <p className="font-semibold text-black text-xl px-4">/</p>
-          <input
-            className="text-bgPurple w-full font-[500] text-sm sm:text-lg rounded-md bg-white py-[1rem]  pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
-            type="number"
-            placeholder="23"
-            data-testid="card-number-exp2"
-          />
+
+          <Input type="number" placeholder="23" dataTestId="card-number-exp2" />
         </div>
       </div>
       <div className="input flex flex-col sm:flex-row items-center sm:space-x-[1rem] justify-between">
@@ -109,11 +99,10 @@ const CardFormSection = ({
           </p>
         </div>
         <div className="relative flex-[55%] w-full">
-          <input
-            className="text-bgPurple w-full font-[500] peer text-sm sm:text-lg rounded-md bg-white py-[1rem] pl-1 sm:pl-[4rem]  border outline-none placeholder:text-[#BEC4D2] focus:outline focus:outline-primaryBlue focus:outline-offset-0 focus:bg-primaryBlue/10 focus:text-primaryBlue focus:placeholder:text-primaryBlue"
+          <Input
             type="password"
             placeholder="Enter Password"
-            data-testid="card-number-password"
+            dataTestId="card-number-password"
           />
           <BsFillGrid3X3GapFill className="text-[#A4AAB8] peer-focus:text-primaryBlue text-2xl absolute  right-2 sm:right-4  top-4 sm:top-5" />
         </div>
