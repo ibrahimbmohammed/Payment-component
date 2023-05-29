@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { describe, it, expect, afterEach } from "vitest";
 import { render, screen, fireEvent, cleanup } from "@testing-library/react";
-import CardFormSection from "@components/CardFormSection";
+import CardFormSection from "@components/molecules/m-card-form-section";
 
 describe("CardFormSection", () => {
   afterEach(() => {

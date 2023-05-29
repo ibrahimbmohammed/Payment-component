@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
-import VitualCard from "@components/VirtualCard";
+import VitualCard from "@components/molecules/m-virtual-card";
 
 describe("VitualCard", () => {
   it("renders correctly with a card logo", async () => {

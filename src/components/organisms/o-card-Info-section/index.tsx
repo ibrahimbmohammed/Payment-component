@@ -1,7 +1,7 @@
 import type { CreditCardType } from "credit-card-type/dist/types";
 import logo from "@assets/images/png/logo1.png";
 import { ChangeEvent } from "react";
-import CardFormSection from "@components/CardFormSection";
+import CardFormSection from "@components/molecules/m-card-form-section";
 
 interface CardInformationSectionProps {
   number: string;

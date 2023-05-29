@@ -9,7 +9,7 @@ describe("Renders main page correctly", async () => {
   it("Should render the page correctly", async () => {
     // Setup
     render(<App />);
-    const appElement = await screen.findByTestId("app");
+    const appElement = await screen.findByTestId("payment-comp");
 
     // Expectations
     expect(appElement).toBeInTheDocument();

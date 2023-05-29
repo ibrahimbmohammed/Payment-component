@@ -7,9 +7,6 @@
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@services/*": ["services/*"],
-      "@helpers/*": ["helpers/*"],
-      "@constants": ["lib/constants"],
       "@lib/*": ["src/lib/*"],
       "@assets/*": ["src/assets/*"]
     },

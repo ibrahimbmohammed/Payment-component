@@ -1,5 +1,5 @@
-import VitualCard from "@components/VirtualCard";
-import CheckoutCard from "@components/CheckoutCard";
+import VitualCard from "@components/molecules/m-virtual-card";
+import CheckoutCard from "@components/molecules/m-checkout-card";
 
 interface CheckoutSectionProps {
   renderCardLogo: () => null | React.ReactNode;

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, cleanup } from "@testing-library/react";
-import CardCheckLogo from "@components/CardCheckLogo";
+import CardCheckLogo from "@components/atoms/a-card-check-logo";
 
 describe("CardCheckLogo", () => {
   afterEach(() => {

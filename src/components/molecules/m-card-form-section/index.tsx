@@ -1,5 +1,5 @@
-import CardCheckLogo from "@components/CardCheckLogo";
-import Input from "@components/CardInuput";
+import CardCheckLogo from "@components/atoms/a-card-check-logo";
+import Input from "@components/atoms/a-card-inuput";
 import { CreditCardType } from "credit-card-type/dist/types";
 import { ChangeEvent } from "react";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";

@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
-import Input from "@components/CardInuput";
+import Input from "@components/atoms/a-card-inuput";
 
 describe("Input", () => {
   it("renders correctly", () => {
