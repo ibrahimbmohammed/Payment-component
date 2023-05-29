@@ -19,7 +19,7 @@ src/App.tsx
 
 ## Folder Structure & Design system
 
-As can be observed from the folder structure,the folder structure follows the atomic design principle, component a categorised as described below.
+As can be observed from the folder structure,the folder structure follows the atomic design principle, components are categorised as described below.
 
 ```
 components/atoms
